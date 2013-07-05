@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
   var fs = require('fs');
-  var cad = fs.readFileiSync('index.html','utf8');
+  var cad = fs.readFileSync('index.html','utf8');
   response.send("+"+cad);
 });
 
